@@ -1,0 +1,58 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+.navbar{
+background:#fff;
+padding:20px;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:40px;
+}
+
+.menu li{
+position:relative;
+}
+
+.menu a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+.active{
+color:#f1c40f;
+}
+
+/* dropdown */
+
+.submenu{
+position:absolute;
+top:40px;
+left:0;
+background:#0b2c4d;
+width:220px;
+display:none;
+flex-direction:column;
+}
+
+.submenu li{
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.submenu a{
+color:white;
+display:block;
+padding:15px;
+}
+
+/* hover */
+
+.dropdown:hover .submenu{
+display:block;
+}

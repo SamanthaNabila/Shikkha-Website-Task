@@ -11,23 +11,25 @@
 :root {
     --primary-color:#012244;
     --secondary-color:rgba(238, 234, 12, 0.904);
-    
+    --primary-font: 'Open Sans' sans-serif;
 }
 a {
     text-decoration: none;
 }
+
 .header__top {
     background: var(--primary-color);
     padding-top: 10px;
-    padding-bottom: 10px;  
+    padding-bottom: 10px; 
+    width: 100%; 
 }
 
 .container{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
-   width: 100%;
-    
+    max-width: 1200px;   
+    margin: 0 auto;
 }
 
 .header__top-item-left{
@@ -36,6 +38,12 @@ a {
 }
 .header__top-item-left span {
     color:#fff;
+    font-family: var(--primary-font);
+    font-size: 12px;
+
+}
+.header__top-item-left span .phone_number {
+    color: red;
 }
 
 .header__top-item-right{
@@ -43,7 +51,10 @@ a {
     gap:15px;
 }
 .header__top-item-right .social-icons {
-    color: yellow;
+    color: var(--secondary-color);
+}
+.social-icons:hover {
+    color: #fff;
 }
 
 /*Header Bootom*/
@@ -53,17 +64,87 @@ a {
     padding-bottom: 20px;
     background: grey;
 }
-.header__bottom-container{
-    display: flex;
-    justify-content: space-around;
+
+.menu{
+display:flex;
+list-style:none;
+gap:40px;
 }
-.header__bottom-menu {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+
+
+.menu li{
+position:relative;
+list-style: none;
 }
-.navbar_main {
-    color: black;
-    text-transform: uppercase;
+
+.menu a{                 
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+.dropdown a:hover {
+    color: var(--secondary-color);
+}
+
+
+.submenu{
+position:absolute;
+top:46px;
+left:0;
+background:#0b2c4d;
+width:250px;
+display:none;
+flex-direction:column;
+text-decoration: none;
+transform: translateY();
+transition: all o.3s ease-in-out;
+
+}
+
+.submenu li{
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.submenu a{
+color:white;
+display:block;
+padding:10px;
+font-size: 16px;
+font-weight: 200;
+}
+.submenu a {
+    transition: 0.3s;
+}
+
+.dropdown:hover .submenu{
+display:block;
+transition: ;
+}
+
+
+/*search button*/
+.search-dropdown{
+    position: relative;
+}
+
+.search-box{
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background: #fff;
+    padding: 10px;
+    display: none;
+    
+}
+
+.search-box input{
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+
+.search-dropdown:hover .search-box{
+    display: block;
 }

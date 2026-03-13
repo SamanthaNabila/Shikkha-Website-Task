@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,21 +21,21 @@
    <div class="container">
 
       <div class="header__top-item-left">
-         <span><i class="fa-regular fa-headphones"></i> +887459438</span>
+         <span class="phone_number"><i class="fa-solid fa-phone"></i> +887459438</span>
          <span>|</span>
          <span><i class="fa-regular fa-envelope"></i> test@gmail.com</span>
       </div>
 
       <div class="header__top-item-right">
-         <a href="#" class="social-icons"><i class="fa-brands fa-facebook"></i>
+         <a href="#"class="social-icons"><i class="fa-brands fa-facebook"></i>
         <span>|</span></a>
-         <a href="#" class="social-icons"><i class="fa-brands fa-twitter"></i>
+         <a href="#"class="social-icons"><i class="fa-brands fa-twitter"></i>
          <span>|</span></a>
-         <a href="#" class="social-icons"><i class="fa-brands fa-youtube"></i>
+         <a href="#"class="social-icons"><i class="fa-brands fa-youtube"></i>
          <span>|</span></a>
-         <a href="#" class="social-icons"><i class="fa-brands fa-twitter"></i>
+         <a href="#"class="social-icons"><i class="fa-brands fa-twitter"></i>
          <span>|</span></a>
-         <a href="#" class="social-icons"><i class="fa-brands fa-youtube"></i>
+         <a href="#"class="social-icons"><i class="fa-brands fa-youtube"></i>
          </a>
       </div>
    </div>
@@ -44,30 +45,83 @@
 
 
 <div class="header__bottom">
-    <div class="header__bottom-container"> 
+    <div class="container header__bottom-container"> 
          <div class="header__bottom-logo">
         <spna><img src="images/logo.png"/></spna>
 
     </div>
-    <div class="header__bottom-menu">
-        <a class="navbar_main" href="#"> home</a>
-        <a class="navbar_main" href="#"> pages</a>
-        <a class="navbar_main" href="#"> element</a>
-        <a class="navbar_main" href="#"> courses </a>
-        <a class="navbar_main" href="#">news </a>
-        <a class="navbar_main" href="#">contact </a>
+    <ul class="menu">
+
+        <li class="dropdown">
+            <a href="#" >HOME</a>
+
+            <ul class="submenu">
+                <li><a href="#">HOME STYLE 1</a></li>
+                <li><a href="#">HOME STYLE 2</a></li>
+                <li><a href="#">HOME STYLE 3</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown"><a href="#">PAGES</a>
+            <ul class="submenu">
+                <li><a href="#">HOME STYLE 1</a></li>
+                <li><a href="#">HOME STYLE 2</a></li>
+                <li><a href="#">HOME STYLE 3</a></li>
+            </ul>
+            
+        
+        </li>
+        <li class="dropdown"><a href="#">ELEMENTS</a>
+            <ul class="submenu">
+                <li><a href="#">HOME STYLE 1</a></li>
+                <li><a href="#">HOME STYLE 2</a></li>
+                <li><a href="#">HOME STYLE 3</a></li>
+            </ul>
+            
+        
+        </li>
+        <li class="dropdown"><a href="#">COURSES</a>
+            <ul class="submenu">
+                <li><a href="#">HOME STYLE 1</a></li>
+                <li><a href="#">HOME STYLE 2</a></li>
+                <li><a href="#">HOME STYLE 3</a></li>
+            </ul>
+            
+        
+        </li>
+        <li class="dropdown"><a href="#">NEWS</a>
+            <ul class="submenu">
+                <li><a href="#">HOME STYLE 1</a></li>
+                <li><a href="#">HOME STYLE 2</a></li>
+                <li><a href="#">HOME STYLE 3</a></li>
+            </ul>
+            
+        
+        </li>
+        <li class="dropdown"><a href="#">CONTACT</a>
+            <ul class="submenu">
+                <li><a href="#">HOME STYLE 1</a></li>
+                <li><a href="#">HOME STYLE 2</a></li>
+                <li><a href="#">HOME STYLE 3</a></li>
+            </ul>
+            
+        
+        </li>
         <span>|</span></a>
-        <a class="navbar-icon-1" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+         <li class="search-dropdown">
+    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search...">
+    </div>
+</li>
+    
         <a class="navbar-icon-2" href="#"><i class="fa-solid fa-cart-arrow-down"></i> </a>
+    </ul>
+    
+    
     </div>
-
-    </div>
-   
-     
-   
-
-
-    </div>
+</div>
 
 </header>
     
