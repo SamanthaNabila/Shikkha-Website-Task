@@ -1,0 +1,47 @@
+
+
+    .search-box {
+      position: relative;
+      width: 650px;
+      max-width: 90%;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 22px 70px 22px 30px;
+      font-size: 28px;
+      border: none;
+      outline: none;
+      background: rgba(255, 255, 255, 0.85);
+      color: #333;
+      box-sizing: border-box;
+    }
+
+    .search-box input::placeholder {
+      color: #666;
+    }
+
+    .search-box button {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      color: #777;
+    }
+
+    .search-box button:hover {
+      color: #000;
+    }
+  
+
+  <form class="search-box" action="#" method="get">
+    <input type="text" name="q" placeholder="Search" />
+    <button type="submit">⌕</button>
+  </form>
+
+</body>
+</html>
