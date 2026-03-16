@@ -24,7 +24,6 @@ margin:auto;
  display:flex;
 justify-content:space-between;
 align-items:center;
-z-index: 1000;
 
 
 }
@@ -90,6 +89,10 @@ margin:0 8px;
 background:white;
 padding:20px 0;
 border-bottom:1px solid #eee;
+position: sticky;
+top: 0;
+z-index: 1000;
+
 
 }
 
@@ -705,6 +708,7 @@ height:30px;
 .header__bottom{
 padding:12px 0;
 z-index: 1000;
+
 }
 .menu{
 display:none;
@@ -891,6 +895,95 @@ font-size:14px;
 padding:0 10px;
 }
 
+/*Event */
+    .events-section{
+        padding: 90px 15px;
+    }
 
+    .registration-header{
+        padding: 24px 22px 34px;
+    }
 
+    .registration-header h3{
+        font-size: 28px;
+    }
+
+    .registration-header i{
+        visibility: hidden;
+    }
+
+    .registration-form{
+        padding: 50px 22px 30px;
+        margin-bottom: 20px;
+    }
+
+    .registration-form input{
+        height: 56px;
+        padding: 0 18px;
+        font-size: 15px;
+        margin-bottom: 16px;
+    }
+
+    .register-btn{
+        height: 58px;
+        width: 70%;
+        line-height: 58px;
+        padding: 0 34px;
+        font-size: 15px;
+    }
+
+    .events-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .events-header h2{
+        font-size: 30px;
+    }
+
+    .events-header p{
+        font-size: 15px;
+    }
+
+    .view-all-btn{
+        min-width: 135px;
+        height: 50px;
+        font-size: 14px;
+        margin-left: 55%;
+    }
+    
+
+    .event-img{
+        display: none;
+    }
+
+    .event-content{
+        padding: 24px 20px 22px;
+    }
+
+    .event-content h4{
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+
+    .event-meta{
+        gap: 14px;
+        margin-bottom: 18px;
+    }
+
+    .event-meta span{
+        font-size: 13px;
+    }
+
+    .event-content p{
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 100%;
+    }
 }
+
+
+
+
+
