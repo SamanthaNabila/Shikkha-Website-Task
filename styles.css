@@ -642,14 +642,86 @@ text-decoration:none;
     color:var(--secondary-color);
 }
 
+/*Advisor Section */
+.advisors-section {
+    padding: 95px 0px 70px;
+    width: 100%;
+}
+.advisor-container {
+    max-width: 1200px;
+    margin: 0 auto;
 
+}
+.advisor-container .sction-title {
+    font-size: 36px;
 
+}
+.advisor-container .sction-title p {
+    font-size: 16px;
+}
+.advisors-grid {
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 20px;
+}
+.advisor-card {
+     padding: 25px 0;
+     margin: auto;
+     text-align: center;
+     
+}
 
+.advisor-card h4{
+font-size:20px;
+margin-top:20px;
+color:#012244;
+font-weight:700;
+}
 
+.advisor-card p{
+color:#7b8087;
+font-size:14px;
+margin-top:5px;
+}
 
+/*student */
 
-
-
+.student {
+    width: 100%;
+    height: auto;
+    background-color: #f8f8fc;
+    margin: auto;
+}
+.student-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   padding: 90px 15px 65px;
+}
+.stisfied_student {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.stisfied_student .logo {
+    margin-bottom: 24px;
+}
+.stisfied_student .logo img{
+    
+    height: 55px;
+    width: 55px;
+}
+.stisfied_student span {
+    font-size: 36px;
+    font-weight: 600;
+}
+.stisfied_student p {
+    font-size: 16px;
+    color: #575757;
+}
 
 
 
@@ -981,6 +1053,23 @@ padding:0 10px;
         line-height: 1.7;
         max-width: 100%;
     }
+    /*Advisor Sections */
+    .advisors-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /*Student sections*/
+    .student-container {
+    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   align-items: center;
+   padding: 90px 15px 65px;
+}
 }
 
 
