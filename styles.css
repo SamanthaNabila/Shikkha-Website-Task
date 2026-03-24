@@ -13,6 +13,11 @@ box-sizing:border-box;
 body{
 font-family:var(--primary-font);
 }
+header{
+  position: relative;
+}
+
+
 
 a{
 text-decoration:none;
@@ -98,9 +103,10 @@ margin:0 8px;
 background:white;
 padding:20px 0;
 border-bottom:1px solid #eee;
-position: sticky;
+position: sticky; 
 top: 0;
-z-index: 1000;
+z-index: 9999;
+width: 100%;
 
 
 }
@@ -109,6 +115,7 @@ z-index: 1000;
 display:flex;
 align-items:center;
 justify-content:space-between;
+max-width: 1200px;
 
 }
 .logo{
