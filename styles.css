@@ -785,12 +785,17 @@ margin:0 6px;
 display:flex;
 align-items:center;
 justify-content:space-between;
+padding-left: 0;
+padding-right: 0;
+}
+.logo{
+    padding: 0 15px;
 }
 .logo img{
 height:30px;
 }
 .header__bottom{
-padding:12px 0;
+padding:30px 0 30px 0;
 z-index: 1000;
 
 }
@@ -801,41 +806,41 @@ display:none;
 display:flex;
 align-items:center;
 gap:16px;
+padding: 0 15px;
 }
 .mobile-icons i{
-font-size:17px;
+font-style: normal;
 }
 .cart-count{
-top:-6px;
+top:-18px;
 right:-8px;
 }
-.hamburger{
-border:1px solid #ccc;
-padding:6px 10px;
-cursor:pointer;
-}
 
-.hamburger i{
-font-size:18px;
-}
 .mobile-menu{
 background:#0b2c4d;
 }
 .mobile-menu-btn{
-border:1px solid #cfcfcf;
-background:#fff;
-padding:6px 4px;      
+border:1px solid #d7d3d3;
+background:#fff; 
+color: #060a0d; 
+justify-content: center; 
+align-items: center;
 display:flex;
-align-items:center;
-justify-content:center;
 cursor:pointer;
-width:40px;
+width:36px;
 height:36px;
+
+
 }
+
+
 .mobile-menu-btn i{
-font-size:20px;       
-font-weight:1200;      
-color:#333;
+font-size:22px;            
+color:#060a0d;
+line-height: 1;
+display:block;
+
+
 }
 
 .menu-close{
@@ -887,6 +892,7 @@ padding:1px 12px;
 }
 
 
+
 .mobile-nav .submenu{
 position:relative;
 top:0;
@@ -908,7 +914,7 @@ color:#cfd6dc;
 font-size:14px;
 }
 .menu-item span{
-transition:0.3s;
+transition:0.1s;
 }
 
 
