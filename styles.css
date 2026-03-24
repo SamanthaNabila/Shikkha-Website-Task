@@ -5,9 +5,9 @@ box-sizing:border-box;
 }
 
 :root{
---primary-color:#012244;
+--primary-color:#002147;
 --secondary-color:#ffc107;
---primary-font:'Poppins', sans-serif;
+--primary-font:"Open Sans", sans-serif;
 }
 
 body{
@@ -18,24 +18,37 @@ a{
 text-decoration:none;
 }
 
-.container{
+/* .container{
 max-width:1200px;
 margin:auto;
- display:flex;
+display:flex;
 justify-content:space-between;
 align-items:center;
 
 
-}
+} */
 
 /* TOP BAR */
 
 .header__top{
 background:var(--primary-color);
-padding:6px 0;
+padding-top: 7px;
+padding-bottom: 10px;
 color:white;
-font-size:14px;
+font-size: 12px;
 
+
+}
+.header__top-container {
+    max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+  
+  padding-left: 0;
+padding-right: 0;
 }
 
 .header__top-item-left{
@@ -54,17 +67,14 @@ gap:8px;
 .email i{
 color:var(--secondary-color);
 margin-right:5px;
-font-size:14px;
+
 }
 .separator{
 color:#9bb2c8;
 margin:0 12px;
 }
 
-.header__top span{
-font-size:14px;
-line-height:1;
-}
+
 
 .header__top-item-right{
 display:flex;
@@ -73,7 +83,6 @@ gap:14px;
 }
 .header__top-item-right a{
 color:#ffc107;
-font-size:14px;
 display:flex;
 align-items:center;
 color:var(--secondary-color);
@@ -119,6 +128,7 @@ display:flex;
 align-items:center;
 gap:30px;
 list-style:none;
+margin-bottom: 0;
 }
 .menu li{
 display:flex;
@@ -732,38 +742,40 @@ margin-top:5px;
 /*Mobile menu*/
 /* MOBILE TOPBAR FIX */
 @media (max-width:768px){
-    .container{
+.container{
 max-width:100%;
-padding:0 15px;
+
 }
 .header__top{
-padding:12px 0;
+padding: 7px 0 10px 0;
 }
 
 .header__top .container{
 flex-direction:column;
-align-items:center;
+align-items: flex-start;
 gap:8px;
+padding-left: 0;
+padding-right: 0;
 }
 
 /* first row */
 .header__top-item-left{
-justify-content:center;
+display: flex;
+justify-content:flex-start;
 flex-wrap:wrap;
 gap:8px;
-font-size:13px;
+font-size:12px;
+padding-left: 10px;
 }
 
 /* second row */
 .header__top-item-right{
 justify-content:center;
+width: 100%;
 flex-wrap:wrap;
 gap:10px;
 }
 
-.header__top-item-right i{
-font-size:13px;
-}
 
 /* separator spacing */
 .separator{
