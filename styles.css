@@ -7,6 +7,7 @@ box-sizing:border-box;
 :root{
 --primary-color:#002147;
 --secondary-color:#ffc107;
+--tertiary-color:#8a8a8a;
 --primary-font:"Open Sans", sans-serif;
 }
 
@@ -739,7 +740,97 @@ margin-top:5px;
     font-size: 16px;
     color: #575757;
 }
+/*Testimonial Sections*/
 
+.testimonial {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    width: 100%;
+    
+}
+.testimonial-container {
+   max-width: 1200px;
+   margin: auto;
+}
+.testimonial-header h1{
+    text-align: center; 
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 30px;
+
+
+    
+}
+.testimonial-header p {
+   max-width: 600px;      
+    margin: 30px auto;        
+    color: #333;        
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color:var(--tertiary-color);
+}
+.student-comment {
+    position: relative;
+
+}
+.student-comment::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 76px;
+    right: 7rem;   
+    bottom: 0px;  
+    background-image: url('images/testi_quato001.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    
+}
+.student-comment p {
+    padding-right: 91px;
+    
+}
+.comment-text {
+    color:var(--tertiary-color);
+    font-size: 14px;
+}
+.student-details {
+    display: flex;
+    margin-bottom: 70px;
+    
+}
+.student-details img {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   
+}
+.student-id  {
+   
+    margin-left: 15px;
+}
+.student-id  p {
+    margin-bottom: 2px;
+}
+.student-name {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.carousel-indicators .active {
+  background-color: orange;
+}
 
 
 
