@@ -1393,6 +1393,75 @@ padding:0 10px;
         height: 10px;
         margin: 0 4px;
     }
+
+    /*Our Shop Section*/
+    .shop-container {
+        position: relative;
+        z-index: 2;
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    .shop-overlay {
+        z-index: 1;
+    }
+
+    .shop {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    .shop__caption {
+        margin: 0 auto 30px;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .shop__caption h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .shop__caption p {
+        font-size: 14px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .shop__card {
+        display: flex;              /* change from grid */
+        overflow-x: auto;           /* enable scroll */
+        gap: 30px;
+        padding: 20px 10px ;
+        margin: auto;
+        scroll-snap-type: x mandatory;
+    }
+    .shop__card::-webkit-scrollbar {
+        display: none;
+    }
+    .shop__card-1,
+    .shop__card-2,
+    .shop__card-3,
+    .shop__card-4 {
+        flex: 0 0 100%;              /* one card visible */
+        max-width: 100%;
+        scroll-snap-align: center;
+        
+    }
+
+    .card-header img {
+        padding: 20px 30px 0 0;
+    }
+     .card-body {
+        padding: 20px;
+    }
+    .books-quality {
+        margin-right: 0;
+    }
+
+
+     
+
 }
 
 
