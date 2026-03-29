@@ -157,7 +157,7 @@ align-items:center;
 
 .menu a{
 color:#333;
-font-weight:600;
+font-weight:500;
 font-size:15px;
 letter-spacing:0.5px;
 transition:0.3s;
@@ -705,20 +705,107 @@ text-decoration:none;
      text-align: center;
      
 }
-
-.advisor-card h4{
-font-size:20px;
-margin-top:20px;
-color:#012244;
-font-weight:700;
+.team-card {
+  width: 280px;
+  font-family: sans-serif;
 }
 
-.advisor-card p{
-color:#7b8087;
-font-size:14px;
-margin-top:5px;
+.img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
+.img-box img {
+  width: 100%;
+  display: block;
+}
+
+/* WHITE CARD (initial) */
+.info-card {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255,255,255,1);
+  text-align: center;
+  padding: 15px;
+  transition: 0.6s ease-out;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.info-card h1 {
+  color: #444;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info-card p {
+  color: #666;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, #f4c542, #0b2c5a);
+  opacity: 0;
+  transition: 0.6s ease-out;
+}
+
+
+.hover-content {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s ease-out;
+}
+
+.hover-content h1 {
+  color: #ffc107;
+  font-size: 18px;
+}
+
+.hover-content p {
+  margin: 5px 0 10px;
+}
+
+.social {
+ 
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+}
+.social-icon i {
+    color: #fff;
+}
+
+
+.team-card:hover .overlay {
+  opacity: 0.85;
+}
+
+.team-card:hover .info-card {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.team-card:hover .hover-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+.social-icon:hover i {
+    color: var(--secondary-color);
+}
 /*student */
 
 .student {

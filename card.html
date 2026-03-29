@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.team-card {
+  width: 280px;
+  font-family: sans-serif;
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-box img {
+  width: 100%;
+  display: block;
+}
+
+/* WHITE CARD (initial) */
+.info-card {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  text-align: center;
+  padding: 15px;
+  transition: 0.4s ease;
+}
+
+.info-card h3 {
+  color: #eab308;
+}
+
+.info-card p {
+  color: #666;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, #f4c542, #0b2c5a);
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+/* HOVER CONTENT */
+.hover-content {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.4s ease;
+}
+
+.hover-content h3 {
+  color: #ffc107;
+}
+
+.hover-content p {
+  margin: 5px 0 10px;
+}
+
+.social span {
+  margin: 0 6px;
+  font-size: 14px;
+}
+
+/* 🔥 HOVER EFFECT */
+.team-card:hover .overlay {
+  opacity: 0.85;
+}
+
+.team-card:hover .info-card {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.team-card:hover .hover-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+    </style>
+</head>
+<body>
+    <div class="team-card">
+  <div class="img-box">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+
+    <!-- Gradient Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Hover Content -->
+    <div class="hover-content">
+      <h3>Chase M. Bynum</h3>
+      <p>English Teacher</p>
+
+      <div class="social">
+        <span>f</span>
+        <span>t</span>
+        <span>g+</span>
+        <span>in</span>
+      </div>
+    </div>
+
+    <!-- Bottom White Card (INITIAL STATE) -->
+    <div class="info-card">
+      <h3>Chase M. Bynum</h3>
+      <p>English Teacher</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
