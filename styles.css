@@ -250,12 +250,15 @@ font-size:15px;
 
 .cart-count{
 position:absolute;
+height: 20px;
+top: 40px;
 top:-15px;
 right:-10px;
+width: 20px;
 background:var(--secondary-color);
 color:black;
 font-size:12px;
-padding:2px 6px;
+padding:1px 6px;
 border-radius:50%;
 }
 
@@ -1591,9 +1594,11 @@ padding: 0 15px;
 }
 .mobile-icons i{
 font-style: normal;
+font-size: 15px;
 }
+
 .cart-count{
-top:-18px;
+top:-14px;
 right:-8px;
 }
 
@@ -1617,7 +1622,7 @@ height:36px;
 
 .mobile-menu-btn i{
 font-size:22px;            
-color:#060a0d;
+color:#444;
 line-height: 1;
 display:block;
 
@@ -1645,6 +1650,9 @@ margin:0;
 padding:10px;
 width:100%;
 background: #fff;
+
+
+
 }
 
 .mobile-nav li{
@@ -1661,6 +1669,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 font-size:16px;
+
 }
 .menu-item{
 display:flex;
@@ -1693,9 +1702,11 @@ padding:14px 20px;
 .mobile-nav .submenu a{
 color:#cfd6dc;
 font-size:14px;
+padding: 0;
 }
 .menu-item span{
-transition:0.1s;
+
+
 }
 
 
@@ -2071,7 +2082,7 @@ padding:0 10px;
     max-width: 90dvw;
 }
 .footer {
-    margin-bottom: 7rem;
+    margin-bottom: 5px;
 }
 
 .footer-top {
