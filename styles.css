@@ -713,7 +713,7 @@ text-decoration:none;
 .img-box {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .img-box img {
@@ -1733,6 +1733,9 @@ padding:0 10px;
     .advisors-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .team-card {
+        margin: 0 auto;
     }
 
 
