@@ -67,12 +67,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 </div>
 </header>
 
-
-<!-- NAVBAR -->
+<!-- NAVBAR bottom started -->
 
 <div class="header__bottom ">
+    <!--navbar bottom container (Note for me: here desk top and mobile navbar included without mobile submenu)-->
 
-<div class="container header__bottom-container">
+<div class=" container header__bottom-container">
 
 <!-- Logo -->
 
@@ -94,7 +94,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 </ul>
 </li>
 
-<li class="dropdown"><a href="#">PAGES</a>
+<li class="dropdown">
+    <a href="#">PAGES</a>
     <ul class="submenu">
 <li><a href="#">Home Style 1</a></li>
 <li><a href="#">Home Style 2</a></li>
@@ -102,6 +103,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 </ul>
 
 </li>
+
 <li class="dropdown"><a href="#">ELEMENTS</a>
     <ul class="submenu">
 <li><a href="#">Home Style 1</a></li>
@@ -110,6 +112,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 </ul>
 
 </li>
+
 <li class="dropdown"><a href="#">COURSES</a>
 <ul class="submenu">
 <li><a href="#">Home Style 1</a></li>
@@ -117,6 +120,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 <li><a href="#">Home Style 3</a></li>
 </ul>
 </li>
+
 <li class="dropdown"><a href="#">NEWS</a>
 <ul class="submenu">
 <li><a href="#">Home Style 1</a></li>
@@ -124,6 +128,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 <li><a href="#">Home Style 3</a></li>
 </ul>
 </li>
+
 <li class="dropdown"><a href="#">CONTACT</a>
 <ul class="submenu">
 <li><a href="#">Home Style 1</a></li>
@@ -152,17 +157,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 </li>
 
 </ul>
+<!-- Menu close for deskt -->
  <div class="mobile-icons">
 
-     <div class="search-dropdown">
+    <div class="search-dropdown">
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i>
+      </a>
 
-<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+     <div class="search-box">
+       <input type="text" placeholder="Search...">
+     </div>
 
-<div class="search-box">
-<input type="text" placeholder="Search...">
-</div>
-
-</div>
+    </div>
 
       <div class="cart">
         <i class="fa-solid fa-cart-shopping"></i>
@@ -183,22 +189,10 @@ data-bs-target="#mobileMenu">
 </button>
 
     </div>
-
-<!-- <button class="mobile-menu-btn d-lg-none collapsed"
-data-bs-toggle="collapse"
-data-bs-target="#mobileMenu">
-
-<span class="menu-open">
-<i class="fa-solid fa-bars"></i>
-</span>
-
-<span class="menu-close">
-✕
-</span>
-
-</button> -->
+    <!--header-bottom-container close-->
 </div>
-<div class="collapse mobile-menu " 
+<!--mobile menu start (note for me: here using clopse mobile menu and submenu opens) -->
+ <div class="collapse mobile-menu " 
      id="mobileMenu">
 
 <div class="mobile-menu-header">
@@ -211,7 +205,7 @@ data-bs-target="#mobileMenu">
 
 </div>
 
-<ul class="mobile-nav">
+ <ul class="mobile-nav">
 
 <li>
 <a class="menu-item" 
@@ -273,7 +267,9 @@ COURSES
 </li>
 <li>
 
-<a class="menu-item" data-bs-toggle="collapse" href="#newsSub">
+<a class="menu-item" 
+data-bs-toggle="collapse" 
+  href="#newsSub">
 NEWS
 <span>+</span>
 </a>
@@ -293,10 +289,12 @@ NEWS
   </a>
 </li>
 
-</ul>
+</ul>  
 
+</div> 
+<!--mobile menu close-->
 </div>
-</div>
+<!--Navabr bottom close-->
 
 
 
@@ -1467,7 +1465,31 @@ scelerisqu Nullam arcu liquam here was consequat.
         </div>
     </div>
 </footer>
+<script>
+var menuItems = document.querySelectorAll(".menu-item");
 
+menuItems.forEach(item => {
+  item.addEventListener("click", function(e) {
+    var targetId = this.getAttribute("href"); // e.g., "#homeSub"
+    
+    // Check if the link actually has a target ID
+    if (targetId && targetId.startsWith("#")) {
+      e.preventDefault();
+      var content = document.querySelector(targetId);
+      
+      if (content) {
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          this.setAttribute("aria-expanded", "false");
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          this.setAttribute("aria-expanded", "true");
+        }
+      }
+    }
+  });
+});
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
