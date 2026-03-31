@@ -685,6 +685,7 @@ a {
   line-height: 26px;
   color: var(--tertiary-color);
   max-width: 95%;
+  margin-bottom: 0;
 }
 
 .event-details {
