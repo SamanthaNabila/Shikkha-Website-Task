@@ -151,6 +151,19 @@ a {
   transition: 0.3s;
   padding: 36px 0px;
 }
+.menu .cart button {
+  color: #002147;
+  background: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+  padding: 36px 0px;
+  border: none;
+}
+.menu .cart button:hover {
+  color: var(--secondary-color);
+}
 
 .menu a:hover {
   color: var(--secondary-color);
