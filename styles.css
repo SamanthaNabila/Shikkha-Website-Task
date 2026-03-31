@@ -1614,7 +1614,7 @@ ul {
 
   /*Hero Mobile Menu */
   .hero {
-    height: 80dvh;
+    height: 70dvh;
     padding: 0 15px 0 15px;
   }
   .hero-container {
@@ -1896,7 +1896,7 @@ ul {
     display: flex;
     overflow-x: auto;
     gap: 30px;
-    /* padding: 20px 10px; */
+    padding: 20px 10px;
     margin: auto;
     scroll-snap-type: x mandatory;
   }
