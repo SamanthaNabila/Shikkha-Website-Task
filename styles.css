@@ -101,7 +101,7 @@ a {
 
 .header__bottom {
   background: white;
-  padding: 32px 0;
+  /* padding: 32px 0; */
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
@@ -114,6 +114,8 @@ a {
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
+  padding: 0;
+  margin: auto;
 }
 .logo {
   display: flex;
@@ -134,6 +136,7 @@ a {
   list-style: none;
   margin-bottom: 0;
   font-family: var(--secondary-font);
+  /* padding: 0 15px; */
 }
 .menu li {
   display: flex;
@@ -141,11 +144,12 @@ a {
 }
 
 .menu a {
-  color: #333;
+  color: #002147;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 0.5px;
   transition: 0.3s;
+  padding: 36px 0px;
 }
 
 .menu a:hover {
@@ -160,7 +164,7 @@ a {
 
 .dropdown .submenu {
   position: absolute;
-  top: 60px;
+  top: 95px;
   left: 0;
   background: #0b2c4d;
   width: 220px;
@@ -186,7 +190,7 @@ a {
 
 .submenu a {
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
   display: block;
   font-weight: 400;
 }
@@ -199,12 +203,14 @@ a {
 
 .search-dropdown {
   position: relative;
+  transition: all ease-out;
 }
 
 .search-box {
   position: absolute;
-  top: 80px;
-  right: 0;
+  top: 95px;
+  right: -40px;
+  margin-top: 10px;
   background: white;
   padding: 10px;
   display: none;
@@ -237,7 +243,7 @@ a {
   position: absolute;
   height: 20px;
   top: 40px;
-  top: -15px;
+  top: 21px;
   right: -10px;
   width: 20px;
   background: var(--secondary-color);
@@ -1432,9 +1438,10 @@ ul {
 /*Mobile menu*/
 /* MOBILE TOPBAR FIX */
 @media (max-width: 768px) {
-  .container {
-    max-width: 100%;
-  }
+  /* .container {
+    max-width: 768px;
+    padding: 0;
+  } */
   .header__top {
     padding: 7px 0 10px 0;
   }
@@ -1465,7 +1472,6 @@ ul {
     gap: 10px;
   }
 
-  /* separator spacing */
   .separator {
     margin: 0 6px;
   }
@@ -1473,8 +1479,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+    max-width: 768px;
   }
   .logo {
     padding: 0 15px;
@@ -1608,17 +1614,19 @@ ul {
 
   /*Hero Mobile Menu */
   .hero {
-    height: 70dvh;
+    height: 80dvh;
+    padding: 0 15px 0 15px;
   }
   .hero-container {
-    margin: auto 0px;
-    padding: 20px;
+    margin: 0;
+    padding: 49px 0 120px;
   }
   .hero-content {
     max-width: 100%;
+    /* padding: 49px 15px 120px; */
   }
   .hero-content h1 {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 1.3;
     margin-bottom: 20px;
@@ -1626,8 +1634,11 @@ ul {
   .hero-content p {
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.3;
-    margin-bottom: 20px;
+    line-height: 28px;
+    margin-top: 18px;
+    margin-bottom: 38px;
+    font-weight: 400;
+    font-family: var(--primary-font);
   }
 
   /* course */
@@ -1885,7 +1896,7 @@ ul {
     display: flex;
     overflow-x: auto;
     gap: 30px;
-    padding: 20px 10px;
+    /* padding: 20px 10px; */
     margin: auto;
     scroll-snap-type: x mandatory;
   }
