@@ -151,6 +151,14 @@ a {
   transition: 0.3s;
   padding: 36px 0px;
 }
+.search-dropdown a {
+  color: #002147;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+  padding: 36px 0px;
+}
 .menu .dropdown a:hover {
   color: var(--secondary-color);
 }
@@ -167,6 +175,9 @@ a {
 .menu .cart .navbar-toggler:hover {
   color: var(--secondary-color);
 }
+
+/*offcanvas */
+
 .offcanvas-header {
   text-align: center;
 }
@@ -190,6 +201,68 @@ a {
   font-size: 14px;
   padding: 0px;
 }
+.offcanvas-body .col-md-12 {
+  margin: 0 auto;
+  padding: 10px 0;
+  border-top: 1px solid #f5f3f3;
+  border-bottom: 1px solid #f5f3f3;
+}
+.offcanvas-body .col-md-12 h1 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  text-align: center;
+}
+.offcanvas-body .cart-item {
+  padding-right: 16px;
+  margin-bottom: 0;
+}
+.offcanvas-body .cart-item .col-md-6 {
+  padding: 12px;
+  padding-top: 0 ;
+}
+.offcanvas-body .cart-item .col-md-4 img {
+  height: 75px;
+  width: 66px;
+}
+.offcanvas-body .cart-item .col-md-6 .course-name {
+  font-size: 10px;
+  padding: 0;
+  margin:5px 0;
+}
+.offcanvas-body .cart-item .col-md-6 .course-name a {
+  font-size: 10px;
+  font-weight: normal;
+  color: :#444;
+}
+.offcanvas-body .cart-item .col-md-6 .course-name a:hover {
+  color: var(--secondary-color);
+  transition: 0.3s ease-in-out;
+}
+.offcanvas-body .cart-item .col-md-6 .course-details {
+  font-size: 10px;
+  margin-bottom: 5px;
+  }
+  .offcanvas-body .cart-item .col-md-6 .course-details span {
+    font-family: var(--primary-font);
+    font-size: 9px;
+  }
+  .offcanvas-body .cart-item .col-md-6 .course-price {
+  font-size: 10px;
+  margin-bottom: 0;
+  }
+  .offcanvas-body .cart-item .col-md-6 .course-price b span {
+    color: rgb(18, 138, 7);
+  }
+  .offcanvas-body .cart-item .col-md-6 .course-price {
+    colo
+  }
+  .offcanvas-body .cart-item .col-md-2 button {
+    padding-top: 0;
+
+
+  }
+ 
 
 /* DROPDOWN */
 
@@ -197,7 +270,7 @@ a {
   position: relative;
 }
 
-.dropdown .submenu {
+.menu .dropdown .submenu {
   position: absolute;
   top: 95px;
   left: 0;
@@ -223,7 +296,7 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.submenu a {
+.dropdown .submenu a {
   color: white;
   padding: 10px 20px;
   display: block;
