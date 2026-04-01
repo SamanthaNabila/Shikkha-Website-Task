@@ -189,18 +189,18 @@ a {
 .learning-offcanvas-cart {
   margin-left: 10px;
 }
-.learning_hreader .btn-off {
-  font-size: 14px;
-  border: none;
-  background: transparent;
-}
-.learning_hreader button i {
-}
+
 .learning_hreader a .learning-offcanvas-cart {
   margin-bottom: 0 !important;
   font-size: 14px;
   padding: 0px;
 }
+.learning_hreader a:hover {
+  color: var(--secondary-color);
+
+}
+
+
 .offcanvas-body .col-md-12 {
   margin: 0 auto;
   padding: 10px 0;
@@ -217,50 +217,73 @@ a {
   padding-right: 16px;
   margin-bottom: 0;
 }
-.offcanvas-body .cart-item .col-md-6 {
+.offcanvas-body .cart-item .col-md-7 {
   padding: 12px;
   padding-top: 0 ;
 }
-.offcanvas-body .cart-item .col-md-4 img {
-  height: 75px;
+.offcanvas-body .cart-item .col-md-3 img {
+  height: 120px;
   width: 66px;
 }
-.offcanvas-body .cart-item .col-md-6 .course-name {
-  font-size: 10px;
+.offcanvas-body .cart-item .col-md-7 .course-name {
+  font-size: 14px;
   padding: 0;
   margin:5px 0;
 }
-.offcanvas-body .cart-item .col-md-6 .course-name a {
-  font-size: 10px;
+.offcanvas-body .cart-item .col-md-7 .course-name a {
+  font-size: 14px;
   font-weight: normal;
   color: :#444;
 }
-.offcanvas-body .cart-item .col-md-6 .course-name a:hover {
+.offcanvas-body .cart-item .col-md-7 .course-name a:hover {
   color: var(--secondary-color);
   transition: 0.3s ease-in-out;
 }
-.offcanvas-body .cart-item .col-md-6 .course-details {
-  font-size: 10px;
+.offcanvas-body .cart-item .col-md-7 .course-details {
+  font-size: 14px;
   margin-bottom: 5px;
   }
-  .offcanvas-body .cart-item .col-md-6 .course-details span {
+  .offcanvas-body .cart-item .col-md-7 .course-details span {
     font-family: var(--primary-font);
-    font-size: 9px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #444;
   }
-  .offcanvas-body .cart-item .col-md-6 .course-price {
-  font-size: 10px;
+  .offcanvas-body .cart-item .col-md-7 .course-price {
+    font-size: 14px;
   margin-bottom: 0;
   }
-  .offcanvas-body .cart-item .col-md-6 .course-price b span {
+  .offcanvas-body .cart-item .col-md-7 .course-price b span {
     color: rgb(18, 138, 7);
   }
-  .offcanvas-body .cart-item .col-md-6 .course-price {
+  .offcanvas-body .cart-item .col-md-7 .course-price {
     colo
   }
   .offcanvas-body .cart-item .col-md-2 button {
     padding-top: 0;
+  }
+  .offcanvas-footer {
+    border-top: 1px solid #e9e6e6;
+    padding: 10px 30px;
+    
+  }
+  
+  .offcanvas-footer .col-md-12 .subtotal {
+    margin-bottom: 10px;
+  }
 
-
+  .subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .offcanvas-footer .col-md-12  button{
+    width: 100%;
+    color: #fff;
+    background: #060a0d;
+    padding: 3px 0;
+    border: none;
+    border-radius: 2px;
   }
  
 
